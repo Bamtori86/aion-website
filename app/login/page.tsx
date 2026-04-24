@@ -1,5 +1,6 @@
 import MaterialSlider from '@/components/MaterialSlider';
 import { supabase } from '@/lib/supabase';
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default async function Home() {
@@ -32,9 +33,11 @@ export default async function Home() {
             <button className="bg-[#FFD600] text-[#1F2937] px-8 py-5 rounded-[2rem] font-black text-xl shadow-[0_8px_0_rgb(217,119,6)] hover:translate-y-1 hover:shadow-[0_4px_0_rgb(217,119,6)] transition-all flex items-center gap-3">
               연구회 시작하기 <span className="text-2xl">→</span>
             </button>
-            <button className="bg-[#F3F4F6] text-[#4B5563] px-8 py-5 rounded-[2rem] font-black text-xl hover:bg-[#E5E7EB] transition-all">
-              연구회 로그인
-            </button>
+            <Link href="/login">
+              <button className="bg-[#F3F4F6] text-[#4B5563] px-8 py-5 rounded-[2rem] font-black text-xl hover:bg-[#E5E7EB] transition-all">
+    연구회 로그인
+              </button>
+            </Link>
           </div>
         </div>
 
