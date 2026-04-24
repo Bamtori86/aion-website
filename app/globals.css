@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce-slow 4s infinite ease-in-out;
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+body {
+  background-color: #FDFCF8; /* 책스책 느낌의 아주 연한 미색 */
+}
